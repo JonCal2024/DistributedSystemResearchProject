@@ -1,0 +1,20 @@
+<?xml version='1.0'?>
+<!DOCTYPE platform SYSTEM "http://simgrid.gforge.inria.fr/simgrid/simgrid.dtd">
+<platform version="4.1">
+  <!-- The master actor (with some arguments) -->
+  <actor host="MasterClock" function="master">
+    <!-- name of hosts on which the workers are running -->
+    <argument value="Worker1" />
+	<argument value="Worker2" />
+	<argument value="Worker3" />
+	<argument value="Worker4" />
+	<argument value="Worker5" />
+  </actor>
+  <!-- The worker processes (with no argument) -->
+  <!-- <actor host="Tremblay" function="worker" /> -->
+  <actor host="Worker1" function="worker" />
+  <actor host="Worker2" function="worker" />
+  <actor host="Worker3" function="worker" />
+  <actor host="Worker4" function="worker" />
+  <actor host="Worker5" function="worker" />
+</platform>
